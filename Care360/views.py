@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 class HomePageView(View):
     """ Home view """
-    template_name = 'home.html'
+    template_name = 'dashboard.html'
 
     def get(self, request, *args, **kwargs):
         context = {}
