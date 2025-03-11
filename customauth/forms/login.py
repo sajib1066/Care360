@@ -9,6 +9,7 @@ class LoginForm(forms.Form):
         widget=forms.EmailInput(attrs={
             'class': 'form-control',
             'name': 'email',
+            'id': 'email',
             'placeholder': 'Email',
             'autofocus': True,
         })
@@ -19,6 +20,7 @@ class LoginForm(forms.Form):
         widget=forms.PasswordInput(attrs={
             'class': 'form-control',
             'name': 'password',
+            'id': 'pwd',
             'placeholder': 'Password',
         })
     )

@@ -14,10 +14,10 @@
 
     <!-- App brand starts -->
     <div class="app-brand ms-3">
-        <a href="index.html" class="d-lg-block d-none">
+        <a href="{% url 'dashboard:dashboard' %}" class="d-lg-block d-none">
             <img src="{% static 'assets/images/logo.svg' %}" class="logo" alt="Medicare Admin Template" />
         </a>
-        <a href="index.html" class="d-lg-none d-md-block">
+        <a href="{% url 'dashboard:dashboard' %}" class="d-lg-none d-md-block">
             <img src="{% static 'assets/images/logo-sm.svg' %}" class="logo" alt="Medicare Admin Template" />
         </a>
     </div>
@@ -41,20 +41,20 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-mini">
                     <div class="country-container">
-                        <a href="index.html" class="py-2">
-                            <img src="assets/images/flags/1x1/us.svg" alt="Admin Panel" />
+                        <a href="{% url 'dashboard:dashboard' %}" class="py-2">
+                            <img src="{% static 'assets/images/flags/1x1/us.svg' %}" alt="Admin Panel" />
                         </a>
-                        <a href="index.html" class="py-2">
-                            <img src="assets/images/flags/1x1/in.svg" alt="Admin Panels" />
+                        <a href="{% url 'dashboard:dashboard' %}" class="py-2">
+                            <img src="{% static 'assets/images/flags/1x1/in.svg' %}" alt="Admin Panels" />
                         </a>
-                        <a href="index.html" class="py-2">
-                            <img src="assets/images/flags/1x1/br.svg" alt="Admin Dashboards" />
+                        <a href="{% url 'dashboard:dashboard' %}" class="py-2">
+                            <img src="{% static 'assets/images/flags/1x1/br.svg' %}" alt="Admin Dashboards" />
                         </a>
-                        <a href="index.html" class="py-2">
-                            <img src="assets/images/flags/1x1/tr.svg" alt="Admin Templatess" />
+                        <a href="{% url 'dashboard:dashboard' %}" class="py-2">
+                            <img src="{% static 'assets/images/flags/1x1/tr.svg' %}" alt="Admin Templatess" />
                         </a>
-                        <a href="index.html" class="py-2">
-                            <img src="assets/images/flags/1x1/gb.svg" alt="Google Admin" />
+                        <a href="{% url 'dashboard:dashboard' %}" class="py-2">
+                            <img src="{% static 'assets/images/flags/1x1/gb.svg' %}" alt="Google Admin" />
                         </a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                         <div class="ps-3 ms-2 border-start">
                                             <div class="d-flex align-items-center mb-2">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/products/1.jpg" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
+                                                    <img src="{% static 'assets/images/products/1.jpg' %}" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     23 invoices have been paid to the MediCare Labs.
@@ -103,7 +103,7 @@
                                         <div class="ps-3 ms-2 border-start">
                                             <div class="d-flex align-items-center mb-2">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/products/2.jpg" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
+                                                    <img src="{% static 'assets/images/products/2.jpg' %}" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     28 new surgical equipments have been purchased.
@@ -122,7 +122,7 @@
                                         <div class="ps-3 ms-2 border-start">
                                             <div class="d-flex align-items-center mb-2">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/products/8.jpg" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
+                                                    <img src="{% static 'assets/images/products/8.jpg' %}" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     36 new doctors and 28 staff members appointed.
@@ -141,7 +141,7 @@
                                         <div class="ps-3 ms-2 border-start">
                                             <div class="d-flex align-items-center mb-2">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/products/9.jpg" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
+                                                    <img src="{% static 'assets/images/products/9.jpg' %}" class="img-shadow img-3x rounded-1" alt="Hospital Admin Templates" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     Requested for 6 new vehicles for medical emergency. .
@@ -243,7 +243,7 @@
                         <!-- Messages list starts -->
                         <div class="p-3">
                             <div class="d-flex py-2">
-                                <img src="assets/images/user3.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
+                                <img src="{% static 'assets/images/user3.png' %}" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
                                 <div class="m-0">
                                     <h6 class="mb-1 fw-semibold">Nick Gonzalez</h6>
                                     <p class="mb-1">
@@ -253,7 +253,7 @@
                                 </div>
                             </div>
                             <div class="d-flex py-2">
-                                <img src="assets/images/user1.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
+                                <img src="{% static 'assets/images/user1.png' %}" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
                                 <div class="m-0">
                                     <h6 class="mb-1 fw-semibold">Clyde Fowler</h6>
                                     <p class="mb-1">
@@ -263,7 +263,7 @@
                                 </div>
                             </div>
                             <div class="d-flex py-2">
-                                <img src="assets/images/user4.png" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
+                                <img src="{% static 'assets/images/user4.png' %}" class="img-shadow img-3x me-3 rounded-5" alt="Hospital Admin Templates" />
                                 <div class="m-0">
                                     <h6 class="mb-1 fw-semibold">Sophie Michiels</h6>
                                     <p class="mb-1">
@@ -298,7 +298,7 @@
                     <h6 class="m-0">James Bruton</h6>
                 </div>
                 <div class="mx-3 my-2 d-grid">
-                    <a href="login.html" class="btn btn-danger">Logout</a>
+                    <a href="{% url 'customauth:logout' %}" class="btn btn-danger">Logout</a>
                 </div>
             </div>
         </div>

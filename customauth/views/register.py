@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 class RegisterView(LoginView):
     """ Custom login view """
-    template_name = 'customauth/register.html'
+    template_name = 'auth/register.html'
     form_class = RegisterForm
 
     def get(self, request, *args, **kwargs):

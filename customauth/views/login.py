@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 class LoginView(LoginView):
     """ Custom login view """
-    template_name = 'customauth/login.html'
+    template_name = 'auth/login.html'
     form_class = LoginForm
 
     def get(self, request, *args, **kwargs):
