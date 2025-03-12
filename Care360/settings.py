@@ -57,6 +57,11 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'customauth.apps.CustomauthConfig',
     'dashboard.apps.DashboardConfig',
+    'departments.apps.DepartmentsConfig',
+    'staff.apps.StaffConfig',
+    'doctors.apps.DoctorsConfig',
+    'patients.apps.PatientsConfig',
+    'appointments.apps.AppointmentsConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
