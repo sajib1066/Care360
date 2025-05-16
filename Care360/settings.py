@@ -50,7 +50,6 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    # https://www.django-rest-framework.org/#installation
     'rest_framework',
 ]
 
@@ -62,6 +61,7 @@ LOCAL_APPS = [
     'doctors.apps.DoctorsConfig',
     'patients.apps.PatientsConfig',
     'appointments.apps.AppointmentsConfig',
+    'hr_management',  # Changed from hr_management.apps.HrManagementConfig to just hr_management
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
