@@ -2,7 +2,7 @@ import uuid
 from datetime import date
 from django.db import models
 from django.utils.text import slugify
-from departments.models import Department, State
+from departments.models import Department
 from datetime import date
 
 # Create your models here

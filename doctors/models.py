@@ -2,7 +2,7 @@ import uuid
 from datetime import date
 from django.db import models
 from django.utils.text import slugify
-from departments.models import Department, State
+from departments.models import Department
 
 
 # Choices
@@ -55,8 +55,8 @@ class Doctor(TimesStamp):
     address = models.TextField(blank=True, null=True)
     country = models.CharField(
         max_length=255, blank=True, null=True, choices=COUNTRY_CHOICES, default='bangladesh')
-    state = models.ForeignKey(
-        State, on_delete=models.SET_NULL, null=True, blank=True)
+    # state = models.ForeignKey(
+    #     State, on_delete=models.SET_NULL, null=True, blank=True)
     slug = models.SlugField(unique=True, blank=True)
 
     def save(self, *args, **kwargs):
